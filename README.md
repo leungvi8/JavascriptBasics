@@ -5,7 +5,7 @@
 ### Resources Used
 * [JavaScript Basics @ Udacity](https://www.udacity.com/course/ud804)
 
-#### Relationship Directions v.2
+#### Relationship Quiz
 
 We learned about relational operators and how they can classify the relationship between two values. Your job is to write the function getRelationship(x,y) function, which should return a string representing whether x is >, < or = y. For example:
 ```javascript
