@@ -4,7 +4,7 @@
 //GOAL IS to determine if x, y are numbers (send message if not)
 //If they are numbers determine which is larger, or equal :) yay
 function notnum(value){
-	return ("uhoh, looks like " + value + " isn't a number"); //message if x OR y is not a number
+	return "uhoh, looks like " + value + " isn't a number"; //message if x OR y is not a number
 }
 
 function getRelationship(x, y) {
@@ -12,28 +12,28 @@ function getRelationship(x, y) {
 
     //First send message if x or y is not a number using above function
     if (isNaN(x) && isNaN(y)){
-    	return ("These two are NOT NUMBERS: " + x + " and " + y);
+    	return "These two are NOT NUMBERS: " + x + " and " + y;
 
     }
     if(isNaN(x)){
-    	return (notnum(x));
+    	return notnum(x);
 
     }
 
     if(isNaN(y)) {
-    	return (notnum(y));
+    	return notnum(y);
     }
 
     //Second check if x greater, less than or equal to y
 
     if (x < y){
-    	return("Hey! " + x + " is less than " + y);
+    	return "Hey! " + x + " is less than " + y;
     } else if (x > y){
-    	return("Hey! " + x + " is greater than " + y);
+    	return "Hey! " + x + " is greater than " + y;
     } else if (x === y){
     	return ("Hey! " + x + " is equal to " + y);
     } else {
-    	return ("ah oh! Something terrible went wrong :( ");
+    	return "ah oh! Something terrible went wrong";
     }
 };
 
@@ -46,3 +46,4 @@ console.log(getRelationship(-1,1));
 // console.log(getRelationship("hi"));
 // console.log(getRelationship(NaN));
 // console.log(getRelationship(NaN, undefined));
+
